@@ -1,12 +1,21 @@
-## Bash Tutorial
+## Groovy Tutorial
 
-##### A collection of tutorial bash scripts 
+##### A collection of tutorial groovy scripts in a containerized sandbox environment.
 
 ## Instructions
+
+```
   docker-compose build
+
   docker-compose run tutorial bash
+```
 
 ## Usage
 
-#### A docker container is configured to initialize two windows.  One window will open vim to allow you to edit the bash files.  When a bash script is saved, the second window will run the script that has been edited.
+##### Two windows are initialized on startup.  One window opens vim to allow script editing. ( Not required, source scripts are also volume mounted. )
+
+##### A background command listens for when files are saved and then executes the saved script.
+
+
+
 

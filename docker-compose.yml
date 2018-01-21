@@ -2,7 +2,7 @@ version: "3"
 
 services:
   tutorial:
-    image: tutorial/bash
+    image: tutorial/groovy
     build:
       context: .
       dockerfile: docker/Dockerfile
