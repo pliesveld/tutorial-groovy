@@ -10,7 +10,7 @@ ENV  JAVA_VERSION=9.0.1 \
      JAVA_HOME=/usr/lib/jvm/current-java
 
 ENV GROOVY_HOME /opt/groovy
-ENV GROOVY_VERSION 2.4.13
+ENV GROOVY_VERSION 2.4.15
 
 RUN cd /tmp && \
     wget "http://download.java.net/java/GA/jdk9/${JAVA_VERSION}/binaries/openjdk-${JAVA_VERSION}_linux-x64_bin.tar.gz" && \
