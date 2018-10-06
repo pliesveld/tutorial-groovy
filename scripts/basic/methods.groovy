@@ -4,6 +4,7 @@ url = URLEncoder.encode 'This:is&url/encoded\\url'
 println url
 
 
+
 def methodName() {
     // Method code
 }
@@ -15,4 +16,18 @@ def sum(parameter1, parameter2 = 0, parameter3 = 0) {
 }
 
 sum 3
+
+def map = [:]
+
+map.put('a',1)
+
+
+def properties = map.collect { key, value -> return key+'='+value }
+
+println map
+println properties
+
+println properties.getClass()
+
+
 
